@@ -3,74 +3,424 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>JTECH – Affordable Tech Accessories</title>
+  <meta name="description" content="JTECH - Professional device restoration and repair services. Restore your phones, tablets, and laptops with certified technicians.">
+  <title>JTECH - Reviving Tech. Restoring Trust.</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <!-- Navigation -->
-  <header class="nav">
-    <div class="logo">JTECH</div>
-    <nav>
-      <a href="#shop">Shop</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+  <nav class="fixed top-0 left-0 right-0 z-50 nav-bar">
+    <div class="nav-container">
+      <div class="nav-logo">JTECH</div>
+      <ul class="nav-menu">
+        <li><a href="#shop" class="nav-link">Shop</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
 
-  <!-- Hero -->
-  <section class="hero">
-    <h1>Affordable Tech Accessories</h1>
-    <p>Chargers, cases, and more — all under £10.</p>
-    <a href="#shop" class="cta">Shop Now</a>
-  </section>
-
-  <!-- Shop Grid -->
-  <section id="shop" class="shop">
-    <h2>Our Products</h2>
-    <div class="grid">
-      <div class="card">
-        <img src="charger.jpg" alt="Phone Charger">
-        <h3>Phone Charger</h3>
-        <p>£9.50</p>
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1 class="hero-title">Reviving Tech.<br>Restoring Trust.</h1>
+      <p class="hero-subtitle">Professional device restoration and repair for phones, tablets, and laptops</p>
+      <div class="hero-buttons">
+        <button class="btn btn-primary">Explore Our Shop</button>
+        <a href="#services" class="btn-link">Learn More Services →</a>
       </div>
-      <div class="card">
-        <img src="case.jpg" alt="Phone Case">
-        <h3>Phone Case</h3>
-        <p>£7.99</p>
-      </div>
-      <div class="card">
-        <img src="cable.jpg" alt="USB Cable">
-        <h3>USB Cable</h3>
-        <p>£4.99</p>
-      </div>
-      <div class="card">
-        <img src="earbuds.jpg" alt="Earbuds">
-        <h3>Earbuds</h3>
-        <p>£9.00</p>
+      <div class="trust-indicators">
+        <div class="trust-item">1000+ Devices Restored</div>
+        <div class="trust-item">90-Day Warranty</div>
+        <div class="trust-item">Certified Technicians</div>
       </div>
     </div>
   </section>
 
-  <!-- About -->
-  <section id="about" class="about">
-    <h2>About JTECH</h2>
-    <p>We specialize in restoring and reselling tech accessories, keeping prices low and quality high.</p>
+  <!-- Shop Section -->
+  <section id="shop" class="shop-section">
+    <div class="section-container">
+      <h2 class="section-title">Browse Restored Devices</h2>
+      
+      <div class="filter-tabs">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="phones">Phones</button>
+        <button class="filter-btn" data-filter="tablets">Tablets</button>
+        <button class="filter-btn" data-filter="laptops">Laptops</button>
+      </div>
+
+      <div class="device-grid">
+        <!-- iPhone 13 Pro -->
+        <div class="device-card" data-category="phones">
+          <div class="device-image"></div>
+          <div class="device-info">
+            <h3 class="device-name">iPhone 13 Pro</h3>
+            <div class="device-condition excellent">Excellent</div>
+            <div class="device-specs">256GB • 95% Battery</div>
+            <div class="device-pricing">
+              <span class="current-price">$649</span>
+              <span class="original-price">$999</span>
+            </div>
+            <button class="btn btn-secondary">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- iPhone 12 -->
+        <div class="device-card" data-category="phones">
+          <div class="device-image"></div>
+          <div class="device-info">
+            <h3 class="device-name">iPhone 12</h3>
+            <div class="device-condition good">Good</div>
+            <div class="device-specs">128GB • 88% Battery</div>
+            <div class="device-pricing">
+              <span class="current-price">$429</span>
+              <span class="original-price">$699</span>
+            </div>
+            <button class="btn btn-secondary">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- Samsung Galaxy S22 -->
+        <div class="device-card" data-category="phones">
+          <div class="device-image"></div>
+          <div class="device-info">
+            <h3 class="device-name">Samsung Galaxy S22</h3>
+            <div class="device-condition excellent">Excellent</div>
+            <div class="device-specs">256GB • 92% Battery</div>
+            <div class="device-pricing">
+              <span class="current-price">$549</span>
+              <span class="original-price">$799</span>
+            </div>
+            <button class="btn btn-secondary">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- iPad Pro -->
+        <div class="device-card" data-category="tablets">
+          <div class="device-image"></div>
+          <div class="device-info">
+            <h3 class="device-name">iPad Pro 11"</h3>
+            <div class="device-condition excellent">Excellent</div>
+            <div class="device-specs">256GB • 94% Battery</div>
+            <div class="device-pricing">
+              <span class="current-price">$649</span>
+              <span class="original-price">$899</span>
+            </div>
+            <button class="btn btn-secondary">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- iPad Air -->
+        <div class="device-card" data-category="tablets">
+          <div class="device-image"></div>
+          <div class="device-info">
+            <h3 class="device-name">iPad Air</h3>
+            <div class="device-condition good">Good</div>
+            <div class="device-specs">64GB • 90% Battery</div>
+            <div class="device-pricing">
+              <span class="current-price">$449</span>
+              <span class="original-price">$599</span>
+            </div>
+            <button class="btn btn-secondary">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- MacBook Pro -->
+        <div class="device-card" data-category="laptops">
+          <div class="device-image"></div>
+          <div class="device-info">
+            <h3 class="device-name">MacBook Pro 14"</h3>
+            <div class="device-condition excellent">Excellent</div>
+            <div class="device-specs">512GB • 96% Battery</div>
+            <div class="device-pricing">
+              <span class="current-price">$1499</span>
+              <span class="original-price">$1999</span>
+            </div>
+            <button class="btn btn-secondary">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- MacBook Air -->
+        <div class="device-card" data-category="laptops">
+          <div class="device-image"></div>
+          <div class="device-info">
+            <h3 class="device-name">MacBook Air M1</h3>
+            <div class="device-condition good">Good</div>
+            <div class="device-specs">256GB • 91% Battery</div>
+            <div class="device-pricing">
+              <span class="current-price">$749</span>
+              <span class="original-price">$999</span>
+            </div>
+            <button class="btn btn-secondary">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- Google Pixel 7 -->
+        <div class="device-card" data-category="phones">
+          <div class="device-image"></div>
+          <div class="device-info">
+            <h3 class="device-name">Google Pixel 7</h3>
+            <div class="device-condition excellent">Excellent</div>
+            <div class="device-specs">128GB • 93% Battery</div>
+            <div class="device-pricing">
+              <span class="current-price">$449</span>
+              <span class="original-price">$599</span>
+            </div>
+            <button class="btn btn-secondary">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- Samsung Galaxy Tab S8 -->
+        <div class="device-card" data-category="tablets">
+          <div class="device-image"></div>
+          <div class="device-info">
+            <h3 class="device-name">Samsung Galaxy Tab S8</h3>
+            <div class="device-condition good">Good</div>
+            <div class="device-specs">128GB • 89% Battery</div>
+            <div class="device-pricing">
+              <span class="current-price">$499</span>
+              <span class="original-price">$699</span>
+            </div>
+            <button class="btn btn-secondary">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <!-- Contact -->
-  <section id="contact" class="contact">
-    <h2>Contact Us</h2>
-    <form>
-      <label>Name <input type="text" required></label>
-      <label>Email <input type="email" required></label>
-      <label>Message <textarea required></textarea></label>
-      <button type="submit">Send</button>
-    </form>
+  <!-- Services Section -->
+  <section id="services" class="services-section">
+    <div class="section-container">
+      <h2 class="section-title">Professional Repair Services</h2>
+      
+      <div class="services-grid">
+        <!-- Screen Replacement -->
+        <div class="service-card">
+          <div class="service-icon">📱</div>
+          <h3 class="service-name">Screen Replacement</h3>
+          <p class="service-description">Professional screen replacement for all major phone and tablet models. High-quality OEM parts.</p>
+          <div class="service-details">
+            <span class="service-price">From $79</span>
+            <span class="service-turnaround">Same day</span>
+          </div>
+          <button class="btn btn-secondary">Book Service</button>
+        </div>
+
+        <!-- Battery Service -->
+        <div class="service-card">
+          <div class="service-icon">🔋</div>
+          <h3 class="service-name">Battery Service</h3>
+          <p class="service-description">Restore your device's battery life with professional replacement. Genuine batteries with full capacity.</p>
+          <div class="service-details">
+            <span class="service-price">From $49</span>
+            <span class="service-turnaround">1-2 hours</span>
+          </div>
+          <button class="btn btn-secondary">Book Service</button>
+        </div>
+
+        <!-- Water Damage -->
+        <div class="service-card">
+          <div class="service-icon">💧</div>
+          <h3 class="service-name">Water Damage Repair</h3>
+          <p class="service-description">Expert water damage restoration and recovery. Careful cleaning and component restoration.</p>
+          <div class="service-details">
+            <span class="service-price">From $99</span>
+            <span class="service-turnaround">24-48 hours</span>
+          </div>
+          <button class="btn btn-secondary">Book Service</button>
+        </div>
+
+        <!-- Diagnostics -->
+        <div class="service-card">
+          <div class="service-icon">🔍</div>
+          <h3 class="service-name">Full Diagnostics</h3>
+          <p class="service-description">Comprehensive diagnostic testing to identify all issues. Detailed report with repair recommendations.</p>
+          <div class="service-details">
+            <span class="service-price">From $29</span>
+            <span class="service-turnaround">30 minutes</span>
+          </div>
+          <button class="btn btn-secondary">Book Service</button>
+        </div>
+
+        <!-- Data Recovery -->
+        <div class="service-card">
+          <div class="service-icon">💾</div>
+          <h3 class="service-name">Data Recovery</h3>
+          <p class="service-description">Recover your photos, documents, and files from damaged devices. High success rate even for severe damage.</p>
+          <div class="service-details">
+            <span class="service-price">From $149</span>
+            <span class="service-turnaround">2-5 days</span>
+          </div>
+          <button class="btn btn-secondary">Book Service</button>
+        </div>
+
+        <!-- Custom Upgrades -->
+        <div class="service-card">
+          <div class="service-icon">⚙️</div>
+          <h3 class="service-name">Custom Upgrades</h3>
+          <p class="service-description">Upgrade your device's storage, memory, or components. Breathe new life into your hardware.</p>
+          <div class="service-details">
+            <span class="service-price">From $89</span>
+            <span class="service-turnaround">1-3 days</span>
+          </div>
+          <button class="btn btn-secondary">Book Service</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about-section">
+    <div class="section-container">
+      <div class="about-grid">
+        <div class="about-content">
+          <h2 class="section-title">About JTECH</h2>
+          <p class="about-text">We are passionate about giving devices a second life. With over a decade of experience in device restoration, our certified technicians combine technical expertise with meticulous attention to detail.</p>
+          <p class="about-text">Every device we restore goes through rigorous testing and quality checks to ensure it meets our high standards and your expectations.</p>
+          
+          <div class="stats-grid">
+            <div class="stat-item">
+              <div class="stat-number">1000+</div>
+              <div class="stat-label">Devices Restored</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">98%</div>
+              <div class="stat-label">Customer Satisfaction</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">10+</div>
+              <div class="stat-label">Years Experience</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">90</div>
+              <div class="stat-label">Day Warranty</div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="about-process">
+          <h3 class="subsection-title">Our Process</h3>
+          <div class="process-timeline">
+            <div class="process-step">
+              <div class="step-number">1</div>
+              <div class="step-name">Inspection</div>
+              <p class="step-description">Thorough evaluation of device condition</p>
+            </div>
+            <div class="process-step">
+              <div class="step-number">2</div>
+              <div class="step-name">Repair</div>
+              <p class="step-description">Professional restoration and repair</p>
+            </div>
+            <div class="process-step">
+              <div class="step-number">3</div>
+              <div class="step-name">Testing</div>
+              <p class="step-description">Rigorous quality control checks</p>
+            </div>
+            <div class="process-step">
+              <div class="step-number">4</div>
+              <div class="step-name">Delivery</div>
+              <p class="step-description">Fast shipping with warranty coverage</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <div class="section-container">
+      <h2 class="section-title">Get In Touch</h2>
+      
+      <div class="contact-grid">
+        <div class="contact-form">
+          <form id="contactForm">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone</label>
+              <input type="tel" id="phone" name="phone">
+            </div>
+            <div class="form-group">
+              <label for="deviceType">Device Type</label>
+              <select id="deviceType" name="deviceType">
+                <option value="">Select device type</option>
+                <option value="phone">Phone</option>
+                <option value="tablet">Tablet</option>
+                <option value="laptop">Laptop</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+        </div>
+
+        <div class="contact-info">
+          <div class="info-item">
+            <h4>Address</h4>
+            <p>123 Tech Street<br>San Francisco, CA 94105</p>
+          </div>
+          <div class="info-item">
+            <h4>Hours</h4>
+            <p>Monday - Friday: 9AM - 6PM<br>Saturday: 10AM - 4PM<br>Sunday: Closed</p>
+          </div>
+          <div class="info-item">
+            <h4>Contact</h4>
+            <p>Phone: (415) 555-0100<br>Email: info@jtech.com</p>
+          </div>
+          <div class="social-links">
+            <a href="#" class="social-link">Twitter</a>
+            <a href="#" class="social-link">Instagram</a>
+            <a href="#" class="social-link">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
   <!-- Footer -->
-  <footer>
-    <p>© 2025 JTECH. All rights reserved.</p>
+  <footer class="footer">
+    <div class="section-container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h4 class="footer-title">JTECH</h4>
+          <p class="footer-description">Reviving Tech. Restoring Trust.</p>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-title">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#shop">Shop</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-title">Contact</h4>
+          <ul class="footer-links">
+            <li><a href="tel:+14155550100">(415) 555-0100</a></li>
+            <li><a href="mailto:info@jtech.com">info@jtech.com</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 JTECH. All rights reserved.</p>
+      </div>
+    </div>
   </footer>
+
+  <script src="scripts.js"></script>
 </body>
 </html>
