@@ -1,1 +1,56 @@
-# JTECH
+
+[Untitled-1.html](https://github.com/user-attachments/files/23871019/Untitled-1.html)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JTECH – Affordable Tech Accessories</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <header class="nav">
+    <div class="logo">JTECH</div>
+    <nav>
+      <a href="#shop">Shop</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h1>Affordable Tech Accessories</h1>
+    <p>Quality gadgets under £10, delivered to your door.</p>
+    <a href="#shop" class="cta">Shop Now</a>
+  </section>
+
+  <!-- Shop Grid -->
+  <section id="shop" class="shop">
+    <h2>Our Products</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="placeholder.jpg" alt="Phone Case">
+        <h3>Phone Case</h3>
+        <p>£7.99</p>
+      </div>
+      <div class="card">
+        <img src="placeholder.jpg" alt="USB Cable">
+        <h3>USB Cable</h3>
+        <p>£4.99</p>
+      </div>
+      <div class="card">
+        <img src="placeholder.jpg" alt="Earbuds">
+        <h3>Earbuds</h3>
+        <p>£9.50</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 JTECH. All rights reserved.</p>
+  </footer>
+</body>
+</html>
